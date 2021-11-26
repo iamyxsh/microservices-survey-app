@@ -30,7 +30,7 @@ func Signup(c *fiber.Ctx) error {
 	}
 
 	client := request.Client{
-		URL:    "http://event:3002",
+		URL:    "http://events:3002",
 		Method: "POST",
 		JSON:   map[string]interface{}{"type": "USER_CREATED", "payload": map[string]interface{}{"id": user.ID, "email": user.Email}},
 	}
