@@ -1,0 +1,39 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  id: Float!
+  email: String!
+}
+
+type SurveyQuestions {
+  id: Int!
+  questions: [String!]!
+  creator: User!
+}
+
+type SurveyAnswers {
+  id: Int!
+  answers: [Boolean!]
+  questions: SurveyQuestions
+}
+
+type Query {
+  getSurvey(id: Float!): SurveyQuestions
+  getAnswer(id: Float!): SurveyAnswers!
+}
+
+type Mutation {
+  createSurvey(createSurveyBody: CreateQuestionsDTO!): SurveyQuestions!
+  postAnswers(postAnswerBody: PostAnswersDTO!): SurveyAnswers!
+}
+
+input CreateQuestionsDTO {
+  questions: [String!]!
+}
+
+input PostAnswersDTO {
+  answers: [Boolean!]!
+  questionId: Float!
+}
