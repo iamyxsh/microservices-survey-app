@@ -1,5 +1,4 @@
 # compiled output
 tmp
-go.sum
 
 *.sqlite3
