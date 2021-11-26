@@ -13,7 +13,7 @@
 
 ### Microservices
 
-## Auth
+# Auth
 
 Basic app running running an API dealing with authentication - login and signup.
 
@@ -22,7 +22,7 @@ Basic app running running an API dealing with authentication - login and signup.
 3. API - REST
 4. Port - 3001
 
-# API
+## API
 
 1. `POST /api/auth/signup` - To signup into the app.
 
@@ -53,7 +53,7 @@ curl -X POST \
 }'
 ```
 
-## Event Bus
+# Event Bus
 
 An event bus made from scratch for the communication between microservices.
 
@@ -62,7 +62,7 @@ An event bus made from scratch for the communication between microservices.
 3. API - REST
 4. Port - 3002
 
-## Survey
+# Survey
 
 Microservice to deal with creating and retrieving questions and answers. Visit
 `http://localhost:3000/graphql` to view the schema.
