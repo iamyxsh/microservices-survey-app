@@ -1,4 +1,4 @@
-### Pre-requisites
+### Prerequisites
 
 1. Docker
 
